@@ -2,10 +2,19 @@ plugins {
     id 'java'
 }
 
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'com.cc.kafka.App'
+        )
+    }
+}
+
 group 'com.cc'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
+
 
 repositories {
     mavenCentral()
